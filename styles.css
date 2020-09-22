@@ -1,0 +1,15 @@
+body{
+    margin:0 
+}
+    
+
+#background{
+    background-color:#7EAEF2 ;
+    width: 120px; 
+    height: 600px;
+}
+#fondoverde{
+    background-color: mediumspringgreen;
+    width: 100vw;
+    height: 100vh;
+}

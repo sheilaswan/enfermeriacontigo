@@ -1,0 +1,9 @@
+1. cd desktop/enfermeriacontigo
+
+2.cuando haga cambios y quiera subirlos: primero poner= git add .
+                                         luego poner= git commit -m "mensajequequiera" ejemplo;"enestecommithiceelheader"
+                                         luego= git push 
+
+Cuando este en grupos, se debe hacer el comando= git pull antes de poner el comando git add . 
+
+

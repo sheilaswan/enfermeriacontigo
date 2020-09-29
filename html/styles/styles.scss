@@ -1,4 +1,8 @@
-#background {
-  background-color: green;
-  color: white;
+$maincolor: #779BD0;
+$colorbutton:#F0FE5E;
+$backgroundgreen: #4FAC84;
+
+body{
+  background-color: $backgroundgreen;
+  margin-top: 2;
 }

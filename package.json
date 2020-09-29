@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "npm run watch:scss & lite-server",
+    "server": "concurrently \"npm:watch:scss\" \"lite-server\"",
     "scss": "node-sass -o html/styles html/styles ",
     "watch:scss": "onchange 'html/styles/*.scss' -- npm run scss"
   },
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "onchange": "^7.0.2"
   }
 }

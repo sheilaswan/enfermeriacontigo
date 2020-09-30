@@ -1,9 +1,16 @@
 1. cd desktop/enfermeriacontigo
+ EN CASO DE QUE YOO NO HAYA HECHO NADA NUEVO Y OTRO SI HAYA HECHO ALGO
+2.cuando haga cambios y quiera subirlos: primero poner= git pull (solo esto es para traer lo que han hecho)
 
-2.cuando haga cambios y quiera subirlos: primero poner= git add .
+              luego cuando yo hago algo:  git add .
                                          luego poner= git commit -m "mensajequequiera" ejemplo;"enestecommithiceelheader"
                                          luego= git push 
 
-Cuando este en grupos, se debe hacer el comando= git pull antes de poner el comando git add . 
+
+EN CASO DE QUE HAYA HECHO ALGO NUEVO: git add .
+
+luego: git commit -m ""
+
+luego: git pull
 
 

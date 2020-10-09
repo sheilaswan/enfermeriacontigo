@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Enfermería Contigo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
@@ -23,26 +27,30 @@
 
   <body>
     <div class="container-fluid">
-      <nav class="row align-items-center">
+      <nav class="row align-items-center margenderecho margenizquierdo">
         <div class="col-sm-4">
           <img src="images/logo.svg" alt="home page" width="190" height="120" />
         </div>
-        <div class="offset-sm-2 col-sm-1 amarillo">Quienes Somos</div>
-        <div class="col-sm-1">Nuestros Aliados</div>
-        <div class="col-sm-1">Nuestro Equipo</div>
-        <div class="col-sm-1">Contactanos</div>
-        <div class="col-sm-2">0416 947 5541</div>
-      </nav>
-
-      <div class="row justify-content-center mt-4">
-        <div class="col-sm">
-          <h2>Cuidarte es Nuestra Responsabilidad</h2>
+        <div class="offset-sm-2 col-sm-1 animacion letramenu">
+          Quienes Somos
         </div>
-      </div>
+
+        <div class="col-sm-1 animacion letramenu">Nuestro Equipo</div>
+        <div class="col-sm-1 animacion letramenu">Datos de Contacto</div>
+        <div class="col-sm-3 numeromenu">
+          <a href="tel:+584169475541" class="animacion"> 0416 947 5541 </a>
+          <i class="fas fa-phone"></i>
+        </div>
+      </nav>
     </div>
 
     <div class="container-fluid">
-      <div class="row mt-4 todapantalla">
+      <div class="row">
+        <div class="col-sm-12 d-flex mt-4 justify-content-center">
+          <h2>Cuidarte es Nuestra Responsabilidad</h2>
+        </div>
+      </div>
+      <div class="row mt-4 todapantalla margenizquierdo margenderecho">
         <div class="col-sm-5">
           <p>
             Para Enfermería Contigo tu bienestar y buena salud es la prioridad.
@@ -50,11 +58,20 @@
             propósito es el de brindar cuidados personalizados con bases éticas
             y profesionales a la altura de nuestros pacientes. Atendemos en las
             zonas del estado Anzoátegui; Puerto la Cruz, Barcelona, Nueva
-            Barcelona, Lecherias, Guanta y Puerto píritu
+            Barcelona, Lecherias, Guanta y Puerto píritu.
           </p>
           <button type="button" class="btn btn-primary">Leer más</button>
         </div>
-        <div class="offset-sm-3 col-sm-4">
+        <div class="offset-sm-3 col-sm-4 position">
+          <svg class="profundidad" width="500" height="50">
+            <rect width="300" height="100" class="rectangulocolor" />
+
+            /></svg
+          ><br />
+
+          <svg class="profundidad rectangulo2" width="500" height="50">
+            <rect width="500" height="100" class="rectangulocolor" />
+          </svg>
           <img src="images/1-01.svg" />
         </div>
       </div>
@@ -64,7 +81,11 @@
           <h2>Nuestros Servicios</h2>
         </div>
         <div class="col-12 col-md-4">
-          <img src="images/viejo.jpg" alt="imagen" class="mt-4 mb-4 imagenes" />
+          <embed
+            src="images/viejo.svg"
+            alt="imagen"
+            class="mt-4 mb-4 imagenes"
+          />
           <p class="pl-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
             molestiae eos ea tenetur qui quam voluptatibusofficiis rem maxime
@@ -77,8 +98,8 @@
         </div>
 
         <div class="col-12 col-md-4">
-          <img
-            src="images/cuidados.jpg"
+          <embed
+            src="images/cuidados.svg"
             alt="imagen 2"
             class="mt-4 mb-4 imagenes"
           />
@@ -94,8 +115,8 @@
         </div>
 
         <div class="col-12 col-md-4">
-          <img
-            src="images/equipo.jpg"
+          <embed
+            src="images/equipo.svg"
             alt="imagen 3"
             class="mt-4 mb-4 imagenes"
           />

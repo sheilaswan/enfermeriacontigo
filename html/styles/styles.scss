@@ -51,21 +51,6 @@ p {
   font-size: 25px;
 }
 
-/*variable: si tal condicion se da, se aplicara el estilo definido, si la pantalla es igual o menor a 769px se vera un margen de 0*/
-@media (max-width: 769px) {
-  .margenizquierdo {
-    margin-left: 0px;
-  }
-  p {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1367px) {
-  p {
-    font-size: 40px;
-  }
-}
 /* los tags como body se escriben sin .; el punto es solo para clases*/
 body {
   font-family: "Montserrat";
@@ -119,5 +104,44 @@ h3 {
     text-decoration: none;
     background-size: 100% 2px;
     background-position: 0% 100%;
+  }
+}
+
+.hamburgesa {
+  display: none;
+}
+
+/*variable: si tal condicion se da, se aplicara el estilo definido, si la pantalla es igual o menor a 769px se vera un margen de 0*/
+@media (max-width: 769px) {
+  .margenizquierdo {
+    margin-left: 0px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .hamburgesa {
+    display: block;
+  }
+  .rodeoheader {
+    display: none;
+  }
+
+  .rodeoheader.responsive {
+    display: block;
+  }
+}
+
+@media (min-width: 1367px) {
+  p {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .rodeoheader {
+    display: none;
+  }
+  .hamburgesa {
+    display: block;
   }
 }

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+$maincolor: #779bd0;
+$colorbutton: #f0fe5e;
+$backgroundgreen: #4fac84;
+$rectangulos: #f0f6ff;
+
+.hoveramarillomenu {
+  &:hover {
+    background-color: $colorbutton;
+    border-color: $colorbutton;
+    height: 50px;
+    color: $maincolor;
+  }
+}
+
+.btn-primary {
+  background-color: $maincolor;
+  &:hover {
+    background-color: $colorbutton;
+    color: #779bd0;
+    border-color: $colorbutton;
+  }
+}
+
+.fondoazul {
+  background-color: $maincolor;
+}
+
+.imagenes {
+  width: 100%;
+}
+
+.todapantalla {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: $maincolor;
+  padding: 20px;
+}
+
+.margenizquierdo {
+  margin-left: 50px;
+}
+
+.margenderecho {
+  margin-right: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/* los tags como body se escriben sin .; el punto es solo para clases*/
+body {
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bolder;
+}
+
+.letramenu {
+  font-weight: bolder;
+}
+.numeromenu {
+  font-size: 27px;
+  font-weight: bolder;
+  color: #779bd0;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.rectangulocolor {
+  fill: $rectangulos;
+}
+
+.profundidad {
+  z-index: -1;
+  position: absolute;
+}
+.position {
+  position: relative;
+}
+
+.rectangulo2 {
+  margin-top: 100%;
+}
+
+.animacion {
+  background-image: linear-gradient($maincolor, $maincolor);
+  background-size: 0% 2px;
+  background-position: 0% 100%;
+  text-decoration: none;
+  transition: background-size 1.5s;
+  background-repeat: no-repeat;
+  &:hover {
+    background-image: linear-gradient($maincolor, $maincolor);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-size: 100% 2px;
+    background-position: 0% 100%;
+  }
+}
+
+.hamburgesa {
+  display: none;
+}
+
+/*variable: si tal condicion se da, se aplicara el estilo definido, si la pantalla es igual o menor a 769px se vera un margen de 0*/
+@media (max-width: 769px) {
+  .margenizquierdo {
+    margin-left: 0px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .hamburgesa {
+    display: block;
+  }
+  .rodeoheader {
+    display: none;
+  }
+
+  .rodeoheader.responsive {
+    display: block;
+  }
+}
+
+@media (min-width: 1367px) {
+  p {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .rodeoheader {
+    display: none;
+  }
+  .hamburgesa {
+    display: block;
+  }
+}
